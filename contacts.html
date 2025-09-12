@@ -5,10 +5,26 @@
     <style>
         body {
             background-image: url('fon.jpg');
-            background-size: cover;
+            background-size: cover;	
             padding: 28px;
             font-family: Helvetica;
             color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: auto;
         }
         
         .content {
@@ -17,19 +33,28 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 40px;
             border-radius: 15px;
-            text-align: center;
+            text-align: left;
         }
         
         h1 {
             color: white;
             font-size: 36px;
             margin-bottom: 30px;
+            text-align: center;
         }
         
         .contact-info {
             font-size: 20px;
             line-height: 2;
             margin-bottom: 30px;
+        }
+        
+        .contact-info ul {
+            padding-left: 20px;
+        }
+        
+        .contact-info li {
+            margin-bottom: 15px;
         }
         
         .contact-info a {
@@ -39,6 +64,17 @@
         
         .contact-info a:hover {
             text-decoration: underline;
+        }
+        
+        .image4 {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image4 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         
         .nav-button {
@@ -65,21 +101,57 @@
             text-align: center;
             margin-top: 30px;
         }
+        figure {
+            text-align: center; /* Центрируем всю фигуру */
+            margin: 30px 0; /* Отступы сверху и снизу */
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block; /* Убирает лишний отступ снизу у img */
+            margin: 0 auto; /* Дублируем центрирование на случай, если у figure не сработает text-align */
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #ccc;
+            margin-top: 10px;
+            font-size: 16px;
+        }
     </style>
 </head>
-<body>
-    <div class="content">
-        <h1>КОНТАКТЫ</h1>
-        
-        <div class="contact-info">
-            <p><strong>Телефон:</strong> +7 (812) 123-45-67</p>
-            <p><strong>Email:</strong> info@aquarium-spb.ru</p>
-            <p><strong>ВКонтакте:</strong> <a href="https://vk.com/aquarium_spb" target="_blank">vk.com/aquarium_spb</a></p>
-        </div>
-
-        <div class="button-container">
+      <header>
+            <h1>КОНТАКТЫ</h1>
+        </header>
+		        <nav class="button-container">
             <a href="index.html" class="nav-button">← На главную</a>
-        </div>
+        </nav>
+<body>
+    <div class="wrapper">
+
+        
+        <main class="content">
+            <section class="contact-info">
+                <ul>
+                    <li><strong>Адрес:</strong> г. Санкт-Петербург, ул. Марата, 86</li>
+                    <li><strong>Телефон:</strong> <a href="tel:+78121234567">+7 (812) 123-45-67</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@oceanarium.ru">info@oceanarium.ru</a></li>
+                    <li><strong>Часы работы:</strong> ежедневно с 10:00 до 20:00</li>
+                    <li><strong>Техническая поддержка:</strong> <a href="tel:+78127654321">+7 (812) 765-43-21</a></li>
+                    <li><strong>Групповые заявки:</strong> <a href="tel:+78129998877">+7 (812) 999-88-77</a></li>
+                </ul>
+            </section>
+        </main>
+		        <figure class="image4">
+            <img src="kartinka4.jpg" alt="Панорамный вид на главный аквариум океанариума">
+            <figcaption>RораллЫ)))</figcaption>
+        </figure>
     </div>
+
+    <footer class="designer">
+        Design by Zaretskaya Ksenia Maksimovna &copy;
+    </footer>
 </body>
 </html>
