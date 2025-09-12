@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Контакты - Океанариум</title>
+    <style>
+        body {
+            background-image: url('fon.jpg');
+            background-size: cover;
+            padding: 28px;
+            font-family: Helvetica;
+            color: white;
+        }
+        
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            font-size: 20px;
+            line-height: 2;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Стили для кнопки */
+        .nav-button {
+            display: block;
+            width: 250px;
+            margin: 40px auto;
+            padding: 15px 30px;
+            background: #00b4d8;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .nav-button:hover {
+            background: #0077b6;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>КОНТАКТЫ</h1>
+        
+        <div class="contact-info">
+            <p><strong>Телефон:</strong> +7 (812) 123-45-67</p>
+            <p><strong>Email:</strong> info@aquarium-spb.ru</p>
+            <p><strong>ВКонтакте:</strong> <a href="https://vk.com/aquarium_spb" target="_blank">vk.com/aquarium_spb</a></p>
+        </div>
+
+        <!-- Кнопка возврата на главную -->
+        <div class="button-container">
+            <a href="index.html" class="nav-button">← На главную</a>
+        </div>
+    </div>
+</body>
+</html>
