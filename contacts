@@ -77,7 +77,6 @@
             <p><strong>ВКонтакте:</strong> <a href="https://vk.com/aquarium_spb" target="_blank">vk.com/aquarium_spb</a></p>
         </div>
 
-        <!-- Кнопка возврата на главную -->
         <div class="button-container">
             <a href="index.html" class="nav-button">← На главную</a>
         </div>
