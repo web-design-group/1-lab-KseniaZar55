@@ -41,7 +41,6 @@
             text-decoration: underline;
         }
         
-        /* Стили для кнопки */
         .nav-button {
             display: block;
             width: 250px;
